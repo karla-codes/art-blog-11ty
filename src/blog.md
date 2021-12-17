@@ -1,9 +1,9 @@
 ---
-title: 'Blog'
+title: 'Karla Walker | Journal'
 layout: 'base.njk'
 ---
 
-## Blog Posts
+## Journal
 
 <ul>
 {% for post in collections.blogPosts %}

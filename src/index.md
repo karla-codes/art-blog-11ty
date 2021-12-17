@@ -1,6 +1,10 @@
 ---
-title: 'Art Blog'
+title: 'Karla Walker | Digital Sketchbook'
 layout: 'base.njk'
 ---
 
-This is my new art blog.
+## Sketchbook
+
+- Image one
+- Image two
+- etc..

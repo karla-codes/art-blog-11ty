@@ -8,7 +8,11 @@
   <title>{{ title }}</title>
 </head>
 <body>
-  <h1>{{ title }}</h1>
+  {% include "navigation.njk" %}
+  <main>
+  {% include "intro.njk" %}
   {{ content | safe }}
+
+  </main>
 </body>
 </html>

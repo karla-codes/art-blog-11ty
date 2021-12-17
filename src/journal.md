@@ -7,6 +7,6 @@ layout: 'base.njk'
 
 <ul>
 {% for post in collections.blogPosts %}
-<li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+<li><a href="{{ post.url }}"><span>{{ post.date | date: "%b %d, %Y" }}</span> {{ post.data.title }}</a></li>
 {% endfor %}
 </ul>

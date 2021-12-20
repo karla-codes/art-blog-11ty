@@ -11,13 +11,15 @@
   <title>{{ title }}</title>
 </head>
 <body>
-  {% include "navigation.njk" %}
-  <main>
-  {% include "intro.njk" %}
   <div class="content-container">
-    {{ content | safe }}
+    <main>
+      {% include "intro.njk" %}
+
+      <div class="post-container">
+        {{ content | safe }}
+      </div>
+    </main>
   </div>
 
-  </main>
 </body>
 </html>

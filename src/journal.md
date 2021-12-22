@@ -3,7 +3,7 @@ title: 'Karla Walker | Journal'
 layout: 'content.njk'
 ---
 
-## Journal
+<!-- ## Journal -->
 
 <ul class="blog-container">
 {% for post in collections.blogPosts %}

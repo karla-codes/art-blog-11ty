@@ -12,14 +12,14 @@
 </head>
 <body>
   <div class="content-container">
+    {% include "navigation.njk" %}
     <main>
-      {% include "intro.njk" %}
-
-      <div class="post-container">
+      {# {% include "intro.njk" %} #}
         {{ content | safe }}
-      </div>
+      {# <div class="post-container">
+      </div> #}
     </main>
   </div>
-
+  {% include "footer.njk" %}
 </body>
 </html>

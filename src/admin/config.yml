@@ -8,7 +8,7 @@ public_folder: "/images/uploads"
 collections:
   - name: "artPosts"
     label: "Art Posts"
-    folder: "art"
+    folder: "src/art"
     create: true
     slug: "{{slug}}"
     fields:
@@ -21,7 +21,7 @@ collections:
 
   - name: "blogPosts"
     label: "Blog Posts"
-    folder: "writing"
+    folder: "src/writing"
     create: true
     slug: "{{slug}}"
     fields:

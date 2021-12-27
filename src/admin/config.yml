@@ -12,42 +12,21 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "art-post.njk",
-        }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "art-post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Notes", name: "body", widget: "markdown" }
-      - {
-          label: "Date",
-          name: "date",
-          widget: "datetime",
-          date_format: "YYY-MM-DD",
-          format: "L",
-        }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYY-MM-DD", format: "L" }
       - { label: "Software", name: "software", widget: "markdown" }
+
   - name: "writing"
     label: "Blog Posts"
     folder: "writing"
     create: true
     slug: "{{slug}}"
     fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "blog-post.njk",
-        }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog-post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Post Body", name: "body", widget: "markdown" }
-      - {
-          label: "Date",
-          name: "date",
-          widget: "datetime",
-          date_format: "YYY-MM-DD",
-          format: "L",
-        }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYY-MM-DD", format: "L" }

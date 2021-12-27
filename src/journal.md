@@ -1,6 +1,6 @@
 ---
 title: 'Karla Walker | Journal'
-layout: 'content.njk'
+layout: 'base.njk'
 ---
 
 <!-- ## Journal -->

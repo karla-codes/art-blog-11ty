@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <title>Karla Walker | Digital Sketchbook</title>
 </head>
 <body>
@@ -26,8 +27,7 @@
 </nav>
     <main>
       
-        
-<!-- <h2>Sketchbook</h2> -->
+        <!-- <h2>Sketchbook</h2> -->
 <ul class="art-container">
 <li><a href="/art/first-art-post/"><img src="https://images.unsplash.com/photo-1639550125248-27e46e925f7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" /></a></li>
 <li><a href="/art/second-art-post/"><img src="https://images.unsplash.com/photo-1639206721930-7750fe8b77cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" /></a></li>
@@ -35,16 +35,22 @@
 <li><a href="/art/fourth-art-post/"><img src="https://images.unsplash.com/photo-1639628735081-3fa6e2e5f296?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" /></a></li>
 </ul>
 
-
-  
-
-
-
       
     </main>
   </div>
   <footer>
- <p>© 2021 Karla Walker</p>
-</footer>
+    <p>© 2021 Karla Walker</p>
+  </footer>
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

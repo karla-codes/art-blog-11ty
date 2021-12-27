@@ -1,6 +1,6 @@
 ---
 title: 'Karla Walker | Digital Sketchbook'
-layout: 'content.njk'
+layout: 'base.njk'
 ---
 
 <!-- <h2>Sketchbook</h2> -->

@@ -6,7 +6,7 @@ media_folder: "src/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "art"
+  - name: "artPosts"
     label: "Art Posts"
     folder: "art"
     create: true
@@ -19,7 +19,7 @@ collections:
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYY-MM-DD", format: "L" }
       - { label: "Software", name: "software", widget: "markdown" }
 
-  - name: "writing"
+  - name: "blogPosts"
     label: "Blog Posts"
     folder: "writing"
     create: true

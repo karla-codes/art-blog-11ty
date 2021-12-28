@@ -16,7 +16,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Notes", name: "body", widget: "markdown" }
-      - { label: "Date", name: "date", widget: "datetime", date_format: "YYY-MM-DD", format: "L" }
+      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Software", name: "software", widget: "markdown" }
 
   - name: "blogPosts"
@@ -29,4 +29,4 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Post Body", name: "body", widget: "markdown" }
-      - { label: "Date", name: "date", widget: "datetime", date_format: "YYY-MM-DD", format: "L" }
+      - { label: "Date", name: "date", widget: "datetime" }

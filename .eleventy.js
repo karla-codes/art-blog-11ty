@@ -1,13 +1,11 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./src/sass/");
-  eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addWatchTarget("sass/");
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("admin");
 
   return {
-    pathPrefix: "/src/",
-
     dir: {
-      input: "src",
+      input: ".",
       output: "public",
     },
   };

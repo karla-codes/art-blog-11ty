@@ -5,7 +5,7 @@ layout: 'base.njk'
 <div class="post-container">
   <p>{{ title }}</p>
   <p>{{ description }}</p>
-  <p>{{ date }}</p>
+  <p>{{ date | date: "%b %d, %Y" }}</p>
   
   {{ content | safe }}    
 </div>

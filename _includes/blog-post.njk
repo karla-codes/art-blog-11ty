@@ -4,8 +4,7 @@ layout: 'base.njk'
 
 <div class="post-container">
   <h2>{{ title }}</h2>
-  {# <p>{{ description }}</p> #}
-  <p>{{ date }}</p>
+  <p>{{ date | readableDate }}</p>
   
   {{ content | safe }}    
 </div>

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -83,6 +83,13 @@ main {
     }
   }
 }
+
+// .blog-container,
+// .post-container {
+// width: 100%;
+// max-width: 900px;
+// margin: 0 auto;
+// }
 
 footer {
   margin: auto auto 1rem;

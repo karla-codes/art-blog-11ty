@@ -1,7 +1,10 @@
 ---
 title: "Karla Walker | About"
+permalink: "/about/index.html"
 layout: "base.njk"
 ---
+
+## Hello there!
 
 <div class="intro">
   <p>
@@ -9,7 +12,7 @@ layout: "base.njk"
   </p>
   <div class="sm-links">
     <ul>
-      <li><a href="">Twitter</a></li>
-      <li><a href="">ArtStation</a></li>
+      <li><a href="https://twitter.com/keidoubleju">Twitter</a></li>
+      <li><a href="https://www.artstation.com/karlawalker">ArtStation</a></li>
   </div>
 </div>

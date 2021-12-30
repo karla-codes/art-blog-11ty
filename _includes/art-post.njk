@@ -2,4 +2,9 @@
 layout: 'base.njk'
 ---
 
-{{ content | safe }}
+<div class="art-container">
+  <h2>{{ title }}</h2>
+  {{ software }}
+  <p>{{ notes }}</p>
+  <img src="{{ image }}" alt="{{ altText }}">
+</div>

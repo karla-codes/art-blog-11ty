@@ -1,6 +1,6 @@
 ---
 notes: null
-software: |
+software:
   - Blender
   - Photoshop
 layout: art-post.njk

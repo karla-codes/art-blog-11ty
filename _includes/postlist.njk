@@ -1,9 +1,11 @@
-<section class="blog-container">
+<section>
+  {% for post in collections.blogPosts | reverse %}
   <article>
-  {% for post in collections.blogPosts %}
-  <span>{{ post.date | readableDate }}</span>
-  <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-  <p> - {{ post.data.description }}</p>
-  {% endfor %}
+    <span>{{ post.date | readableDate }}</span>
+    <div>
+      <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+      <p>{{ post.data.description }}</p>
+    </div>
   </article>
+  {% endfor %}
 </section>

@@ -3,8 +3,14 @@ layout: 'base.njk'
 ---
 
 <div class="post-container">
+  
   <h2>{{ title }}</h2>
   <p>{{ date | readableDate }}</p>
   
-  {{ content | safe }}    
+  {{ content | safe }}  
+
 </div>
+
+<div class="post-nav">
+  <a href="/journal/">&#8592; Back to Journal</a>
+</div>  

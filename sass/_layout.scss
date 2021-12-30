@@ -56,6 +56,10 @@ main {
   padding-top: 10rem;
   width: 90%;
   margin: 0 auto;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .intro {
@@ -84,17 +88,49 @@ main {
   }
 }
 
-// .blog-container,
-// .post-container {
-// width: 100%;
-// max-width: 900px;
-// margin: 0 auto;
-// }
+.post-container {
+  max-width: 37.5rem;
+  margin-bottom: 2rem;
+
+  p:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+
+  .post-nav {
+    margin-top: auto;
+  }
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.75rem;
+  }
+
+  span {
+    margin-right: 12px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: min(100vw, 600px);
+
+    h3 {
+      margin-right: 1rem;
+    }
+  }
+}
 
 footer {
   margin: auto auto 1rem;
   text-align: left;
-  width: 95%;
+  width: 90%;
 
   p {
     margin-bottom: 1rem;

@@ -14,6 +14,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
+      - { label: "Alt Text", name: "altText", widget: "string" }
       - { label: "Notes", name: "body", widget: "markdown" }
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }
       - { label: "Software", name: "software", widget: "markdown" }

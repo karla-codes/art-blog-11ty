@@ -10,4 +10,8 @@ image: https://images.unsplash.com/photo-1639550125248-27e46e925f7b?ixlib=rb-1.2
 altText: Pink glazed 3d donuts
 date: 2021-12-30T04:43:42.052Z
 ---
-This is my first art post.
+This is my first art post. This is a description of my first art post.
+
+### Software Used
+- Blender
+- Photoshop

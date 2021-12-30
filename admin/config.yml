@@ -17,7 +17,6 @@ collections:
       - { label: "Alt Text", name: "altText", widget: "string" }
       - { label: "Notes", name: "body", widget: "markdown" }
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }
-      - { label: "Software", name: "software", widget: "list" }
 
   - name: "blogPosts"
     label: "Blog Posts"

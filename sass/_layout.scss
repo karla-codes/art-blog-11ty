@@ -108,10 +108,12 @@ main {
     }
   }
 
-  img {
-    width: 100%;
-    max-width: 100rem;
+  picture {
     margin-left: auto;
+    img {
+      width: 100%;
+      max-width: 100rem;
+    }
   }
 
   @media screen and (min-width: 1080px) {

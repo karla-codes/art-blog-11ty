@@ -3,6 +3,7 @@ backend:
   branch: main
 
 media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "artPosts"
@@ -11,8 +12,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "art-post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
+      - { label: "Small Image", name: "image-small", widget: "image" }
       - { label: "Alt Text", name: "altText", widget: "string" }
       - { label: "Notes", name: "body", widget: "markdown" }
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }

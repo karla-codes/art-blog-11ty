@@ -15,8 +15,8 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "art-post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Medium Image", name: "image-medium", widget: "image" }
-      - { label: "Small Image", name: "image-small", widget: "image" }
+      - { label: "Medium Image", name: "imageMedium", widget: "image" }
+      - { label: "Small Image", name: "imageSmall", widget: "image" }
       - { label: "Alt Text", name: "altText", widget: "string" }
       - { label: "Notes", name: "body", widget: "markdown" }
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }

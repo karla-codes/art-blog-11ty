@@ -1,5 +1,5 @@
 <ul class="art-container">
   {% for post in collections.artPosts | reverse %}
-  <li><a href="{{ post.url }}"><img src="{{ post.data.imgUrl }}" /></a></li>
+  <li><a href="{{ post.url }}"><img src="{{ post.data.image }}" /></a></li>
   {% endfor %}
 </ul>

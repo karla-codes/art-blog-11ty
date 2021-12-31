@@ -24,6 +24,7 @@ nav {
   display: flex;
   position: fixed;
   top: 0;
+  left: 0;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgba(255, 255, 255);
@@ -57,9 +58,8 @@ nav {
 }
 
 main {
-  padding-top: 10rem;
   width: 90%;
-  margin: 0 auto;
+  margin: 10rem auto 0;
 
   h2 {
     margin-bottom: 1rem;
@@ -94,7 +94,7 @@ main {
 
 .art-post {
   display: grid;
-  gap: 2rem;
+  gap: 5%;
   grid-template-columns: 1fr;
   margin-bottom: 2rem;
 
@@ -106,12 +106,12 @@ main {
 
   img {
     width: 100%;
-    max-width: 61.25rem;
+    max-width: 100rem;
     margin-left: auto;
   }
 
   @media screen and (min-width: 1080px) {
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 25% 1fr;
   }
 }
 

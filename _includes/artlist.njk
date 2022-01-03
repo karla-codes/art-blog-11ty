@@ -1,5 +1,12 @@
 <ul class="art-container">
   {% for post in collections.artPosts | reverse %}
-  <li><a href="{{ post.url }}"><img src="{{ post.data.imageSmall }}" /></a></li>
+  <li><a href="{{ post.url }}"><picture>
+    <!-- image size: 1500px -->
+    <source media="(min-width: 440px)" srcset="{{ post.data.imageMedium }}">
+    <!-- image size: original size, ~ 2k -->
+    <source media="(min-width: 1220px)" srcset="{{ post.data.image }}">
+    <!-- image size: 1000px -->
+    <img src="{{ post.data.imageSmall }}" alt="{{ altText }}">
+  </picture></a></li>
   {% endfor %}
 </ul>

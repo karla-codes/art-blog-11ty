@@ -93,10 +93,11 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   li {
+    max-width: 400px;
+
     a img {
       height: 300px;
       width: 100%;
-      max-width: 400px;
       object-fit: cover;
     }
   }

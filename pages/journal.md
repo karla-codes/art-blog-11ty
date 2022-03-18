@@ -5,4 +5,4 @@ layout: "base.njk"
 templateEngineOverride: njk, md
 ---
 
-{% include "postlist.njk" %}
+<!-- {% include "postlist.njk" %} -->

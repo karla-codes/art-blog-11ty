@@ -3,3 +3,5 @@ node_modules
 public/
 .DS_Store
 images/uploads
+# Local Netlify folder
+.netlify

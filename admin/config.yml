@@ -4,6 +4,10 @@ backend:
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 80d3a356b66002b8b324
 
 collections:
   - name: "artPosts"

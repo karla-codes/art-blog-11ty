@@ -1,0 +1,21 @@
+---
+layout: "layout/base.njk"
+---
+
+<div class="art-post">
+  <div>
+    <h2>{{ title }}</h2>
+    <p>{{ date | readableDate }}</p>
+    {{ content | safe }}
+  </div>
+  <img
+    srcset="{{ image }}?nf_resize=fit&w=320 320w,{{ image }}?nf_resize=fit&w=480 480w, {{ image }}?nf_resize=fit&w=800 800w"
+    sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+    src="{{ image }}?nf_resize=fit&w=800"
+    alt="{{ altText }}"
+  />
+</div>
+
+<div class="post-nav">
+  <a href="/">&#8592; Back to Sketchbook</a>
+</div>

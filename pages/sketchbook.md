@@ -1,8 +1,8 @@
 ---
 title: "Karla Walker | Digital Sketchbook"
 permalink: "/"
-layout: "base.njk"
+layout: "layout/base.njk"
 templateEngineOverride: njk, md
 ---
 
-{% include "artlist.njk" %}
+{% include "partials/artlist.njk" %}

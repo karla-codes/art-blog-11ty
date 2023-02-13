@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 4em auto;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 12ch;
+  }
+}

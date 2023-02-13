@@ -1,88 +1,54 @@
-const { DateTime } = require("luxon");
-const Image = require("@11ty/eleventy-img");
-const path = require("path");
-const outdent = require("outdent");
+const { DateTime } = require("luxon")
+const Image = require("@11ty/eleventy-img")
+const path = require("path")
 
-// Eleventy Image Lazy Loading: https://www.aleksandrhovhannisyan.com/blog/eleventy-image-lazy-loading/
+// async function generateImages() {
+//   let stats = await Image("images/uploads/choco-peanut-donut.jpg")
+//   console.log(stats)
+// }
 
-const ImageWidths = {
-  ORIGINAL: null,
-  PLACEHOLDER: 24,
-};
+// generateImages()
+const imageShortcode = async (src, alt, sizes) => {
+  let metadata = await Image(src, {
+    widths: [300, 900],
+    formats: ["webp", "jpeg"],
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src)
+      const name = path.basename(src, extension)
 
-const imageShortcode = async (
-  relativeSrc,
-  alt,
-  widths = [400, 1080, 1800],
-  baseFormat = "jpeg",
-  optimizedFormats = ["webp"],
-  sizes = "100vw"
-) => {
-  const { dir: imgDir } = path.parse(relativeSrc);
-  const fullSrc = path.join(".", relativeSrc);
+      return `${name}-${width}.${format}`
+    },
+    dryRun: true,
+  })
 
-  const imageMetadata = await Image(fullSrc, {
-    widths: [ImageWidths.ORIGINAL, ImageWidths.PLACEHOLDER, widths],
-    formats: [...optimizedFormats, baseFormat],
-    outputDir: path.join("public", imgDir),
-    urlPath: imgDir,
-  });
+  console.log(metadata)
 
-  // use reduce to get the placeholder and largest image corresponding to each format
-  const formatSizes = Object.entries(imageMetadata).reduce((formatSizes, [format, images]) => {
-    if (!formatSizes[format]) {
-      const placeholder = images.find(image => image.width === ImageWidths.PLACEHOLDER);
-      const largestVariant = images[images.length - 1];
+  let imgAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  }
 
-      formatSizes[format] = {
-        placeholder,
-        largest: largestVariant,
-      };
-    }
-    return formatSizes;
-  }, {});
-
-  const picture = `<picture class="lazy-picture">
-    ${Object.values(imageMetadata)
-      .map(formatEntries => {
-        const { format: formatName, sourceType } = formatEntries[0];
-        const placeholderSrcset = formatSizes[formatName].placeholder.url;
-        const actualSrcset = formatEntries
-          .filter(image => image.width !== ImageWidths.PLACEHOLDER)
-          .map(image => image.srcset)
-          .join(", ");
-
-        return `<source type="${sourceType}" srcset="${placeholderSrcset}" data-srcset="${actualSrcset}" data-sizes="${sizes}">`;
-      })
-      .join("\n")}
-    <img
-      src="${formatSizes[baseFormat].placeholder.url}"
-      data-src="${formatSizes[baseFormat].largest.url}"
-      alt="${alt}"
-      class="lazy-img"
-      loading="lazy">
-  </picture>`;
-  return outdent`${picture}`;
-};
+  return Image.generateHTML(metadata, imgAttributes)
+}
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("sass/");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("images/uploads");
-  eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addWatchTarget("sass/")
+  eleventyConfig.addPassthroughCopy("css")
+  eleventyConfig.addPassthroughCopy("images/uploads")
+  eleventyConfig.addPassthroughCopy("admin")
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
-  });
+    return DateTime.fromJSDate(dateObj).toFormat("LL-dd-yy")
+  })
 
-  eleventyConfig.addNunjucksAsyncFilter("image", imageShortcode);
-  eleventyConfig.addNunjucksShortcode("image", imageShortcode);
-  eleventyConfig.addShortcode("image", imageShortcode);
+  eleventyConfig.addAsyncShortcode("image", imageShortcode)
 
   return {
     dir: {
       input: ".",
       output: "public",
     },
-  };
-};
+  }
+}

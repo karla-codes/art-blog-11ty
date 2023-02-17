@@ -20,7 +20,7 @@ a {
 }
 
 .post-nav {
-  margin-top: auto;
+  margin-top: 2em;
 }
 
 main {
@@ -33,13 +33,13 @@ main {
   }
 }
 
-.intro {
+.about {
   width: 100%;
   max-width: 40ch;
 
-  // @media screen and (min-width: 740px) {
-  //   width: 372px;
-  // }
+  a {
+    text-decoration: underline;
+  }
 
   .sm-links {
     margin-top: 1rem;
@@ -51,22 +51,6 @@ main {
     }
     a {
       text-decoration: underline;
-    }
-  }
-}
-
-.art-container {
-  display: grid;
-  // gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-  li {
-    // max-width: 400px;
-
-    a img {
-      height: 300px;
-      width: 100%;
-      object-fit: cover;
     }
   }
 }

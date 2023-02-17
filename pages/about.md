@@ -6,13 +6,13 @@ layout: "layout/base.njk"
 
 ## Hello there!
 
-<div class="intro">
+<div class="about">
   <p>
-    My name is Karla and I’m an aspiring 3D artist. I decided to create this digital space so I can share my progress and document my laerning journey.   
+Welcome to my digital sketchbook. I love doodling on my free time and created this space to share my progress as I work on improving my 2d/3d art. I also enjoy building delightful experiences with <a href="https://karla.codes">code</a>.
   </p>
-  <div class="sm-links">
+  <!-- <div class="sm-links">
     <ul>
       <li><a href="https://twitter.com/keidoubleju">Twitter</a></li>
       <li><a href="https://www.artstation.com/karlawalker">ArtStation</a></li>
-  </div>
+  </div> -->
 </div>

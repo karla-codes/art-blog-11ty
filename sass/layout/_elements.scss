@@ -84,7 +84,9 @@ main {
   }
 
   img {
-    width: 100%;
+    width: min-content;
+    height: 85vh;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 1080px) {

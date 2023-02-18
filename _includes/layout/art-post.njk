@@ -9,7 +9,7 @@ layout: "layout/base.njk"
     {{ content | safe }}
   </div>
   <img
-    srcset="{{ image }}?nf_resize=fit&w=480 480w, {{ image }}?nf_resize=fit&w=600 600w,{{ image }}?nf_resize=fit&w=900 900w, {{ image }}?nf_resize=fit&w1200 1200w"
+    srcset="{{ image }}?nf_resize=fit&w=480 480w, {{ image }}?nf_resize=fit&w=600 600w,{{ image }}?nf_resize=fit&w=900 900w, {{ image }}?nf_resize=fit&w=1200 1200w"
     sizes="80vw"
     src="{{ image }}?nf_resize=fit&w=800"
     alt="{{ altText }}"

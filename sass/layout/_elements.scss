@@ -84,8 +84,9 @@ main {
   }
 
   img {
-    width: min-content;
-    height: 85vh;
+    // width: a;
+    // height: 85vh;
+    max-height: 85vh;
     margin: 0 auto;
   }
 

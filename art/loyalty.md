@@ -5,7 +5,7 @@ altText: Clone trooper helmet decorated with Ahsoka Tano's facial markings
 date: 2020-04-16
 ---
 
-T﻿his was a fun piece to work on. Ahsoka was back and seeing the clone troopers honor her with their painted helmets made me 😭. I REALLY want to continue with this helmet series..
+This was a fun piece to work on. Ahsoka was back and seeing the clone troopers honor her with their painted helmets made me 😭. I REALLY want to continue with this helmet series..
 
 ### Software Used
 

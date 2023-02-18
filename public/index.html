@@ -1,56 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Karla Walker | Digital Sketchbook</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-  <div class="content-container">
-    <nav>
-      <div class="logo">
-        <h1><a href="/">Karla Walker</a></h1>
-        <p>Padawan 3D designer and illustrator</p>
-      </div>
-      <ul class="nav-links">
-        <li class="active"><a href="/">Sketchbook</a></li>
-        <li class=""><a href="/journal/">Journal</a></li>
-        <li class=""><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-    <main>
-      <ul class="art-container">
-  <li><a href="/art/chocolate-donut-with-peanuts/"><picture>
-    <!-- image size: 1500px -->
-    <source media="(min-width: 440px)" srcset="/images/uploads/choco-peanut-donut-medium.jpg">
-    <!-- image size: original size, ~ 2k -->
-    <source media="(min-width: 1220px)" srcset="/images/uploads/choco-peanut-donut.jpg">
-    <!-- image size: 1000px -->
-    <img src="/images/uploads/choco-peanut-donut-small.jpg" alt="">
-  </picture></a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+    <title>Karla Walker | Digital Sketchbook</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <div class="content-container">
+      <nav>
+        <div class="logo">
+          <h1><a href="/">Karla Walker</a></h1>
+          <p>2d/3d Artist</p>
+        </div>
+        <ul class="nav-links">
+          <li class="active"><a href="/">Sketchbook</a></li>
+          <li class=""><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      <main>
+        <ul class="art-container">
+  <li>
+    <a href="/art/chocolate-donut-with-peanuts/">
+      <img src="/images/uploads/choco-peanut-donut.jpg" alt="" />
+    </a>
+    <span class="art-container-info"
+      >01-08-22<br />Chocolate Donut with Peanuts</span
+    >
+  </li>
+  <li>
+    <a href="/art/sample copy 2/">
+      <img src="https://images.unsplash.com/photo-1676107983201-041c63f0012a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="" />
+    </a>
+    <span class="art-container-info"
+      >01-04-22<br />Sample</span
+    >
+  </li>
+  <li>
+    <a href="/art/sample copy 3/">
+      <img src="https://images.unsplash.com/photo-1675990978468-fae491567b75?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="" />
+    </a>
+    <span class="art-container-info"
+      >01-02-22<br />Sample</span
+    >
+  </li>
+  <li>
+    <a href="/art/sample copy/">
+      <img src="https://images.unsplash.com/photo-1676039568697-e8c51489b0d4?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2044&amp;q=80" alt="" />
+    </a>
+    <span class="art-container-info"
+      >01-01-22<br />Sample</span
+    >
+  </li>
+  <li>
+    <a href="/art/sample/">
+      <img src="https://images.unsplash.com/photo-1675969563450-522861e76929?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1975&amp;q=80" alt="" />
+    </a>
+    <span class="art-container-info"
+      >12-31-21<br />Sample</span
+    >
+  </li>
+  <li>
+    <a href="/art/loyalty/">
+      <img src="/images/uploads/final-ahsoka-trooper-helmet.png" alt="" />
+    </a>
+    <span class="art-container-info"
+      >04-15-20<br />Loyalty</span
+    >
+  </li>
 </ul>
 
-    </main>
-  </div>
-  <footer>
-    <p>© 2021 Karla Walker</p>
-  </footer>
-  <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
+      </main>
+    </div>
+    <footer>
+      <p>© 2023 Karla Walker</p>
+    </footer>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/"
+            })
+          }
+        })
       }
-    });
-  }
-</script>
-</body>
+    </script>
+  </body>
 </html>
